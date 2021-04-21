@@ -2,7 +2,7 @@ import { getCustomRepository } from "typeorm";
 import { MessagesRepository } from "../repositories/MessagesRepository";
 
 interface MessagesServiceProps {
-  admin_id: string;
+  admin_id?: string;
   user_id: string;
   text: string;
 }
