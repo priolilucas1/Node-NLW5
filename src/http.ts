@@ -20,9 +20,7 @@ app.get("/pages/client", (request, response) => {
 const http = createServer(app); //Criando protocolo Http
 const io = new Server(http); //Criando protocolo WS
 
-io.on("connection", (socket: Socket) => {
-  console.log("Se conectou", socket.id);
-});
+io.on("connection", (socket: Socket) => {});
 
 app.use(express.json());
 app.use(routes);
