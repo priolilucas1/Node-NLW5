@@ -92,7 +92,6 @@ function sendMessage(id) {
 }
 
 socket.on("admin_receive_message", (data) => {
-  console.log(data);
   const connection = connectionsUsers.find(
     (connection) => (connection.socket_id = data.socket_id)
   );
